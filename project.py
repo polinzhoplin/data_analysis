@@ -17,11 +17,11 @@ st.set_page_config(
 
 #MAIN SETS
 st.title("Energy Production Distribution in the World")
-st.image('C:/Users/ppoli/Datacamp24/windmills.jpg')
+st.image('/workspaces/data_analysis/windmills.jpg')
 st.write("Project to discover energy resourses in different countries. Use this dashboard to explore energy production trends over time in different country.")
 
 #DATA
-df = pd.read_csv('c:/Users/ppoli/Datacamp24/Panel format.csv')
+df = pd.read_csv('/workspaces/data_analysis/Panel format.csv')
 df["Year"] = pd.to_datetime(df["Year"],format="%Y")
 country = st.sidebar.selectbox("Select a country:", df["Country"].unique())
 
