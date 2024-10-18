@@ -1,11 +1,11 @@
 import streamlit as st
 import streamlit as st
-import numpy as np  # linear algebra
-import pandas as pd  # data processing
+import numpy as np  
+import pandas as pd  
 import plotly as plt
 import plotly.express as px
-# import plotly.graph_objects as go
-# from plotly import subplots
+import plotly.graph_objects as go
+from plotly import subplots
 
 #PAGE SETS
 st.set_page_config(
